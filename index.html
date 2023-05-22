@@ -1,0 +1,375 @@
+ <!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+  <head>
+  
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   
+    <meta name="author" content="Panorama da Economia Criativa no DF"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="PENDENTE"/> 
+    <link href="assets/images/favicon/favicon.png" rel="icon"/>
+    
+    <!--  Fonts--><script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700ii%7CMerriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/>
+  
+    <link href="assets/vendor.css" rel="stylesheet"/>
+    <link href="assets/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <script src="assets/js/growl-notification.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <title>Desenvolvimento Mobile</title>
+
+
+  </head>
+
+  <body class="body-scroll">
+
+      <header class="header header-1 header-transparent header-fixed" id="navbar-spy">
+        <nav class="navbar navbar-hidden navbar-sticky navbar-expand-lg" id="primary-menu"> 
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" data-scroll="scrollTo" href="#hero">Início</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#artigos">Artigos</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#resumo">Dicas</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#sobre">Resumo</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </header>
+      <section class="hero hero-2" id="hero">
+        <div class="hero-content bg-overlay bg-overlay-dark">
+          <div class="bg-section">
+            <img src="imgs/" style="filter: blur(14px);" alt="bg" />
+          </div>
+          <div class="container">
+            <div class="row row-content">
+              <div class="col-12 col-md-6 offset-md-1 pt-100 wow fadeInUp" data-wow-duration="1s">
+                <div class="hero-headline" style="margin-top: 100px;">VAMOS NOS CONHECER</div>
+                <div class="hero-action">
+                  <form class="mb-0 form-action mailchimp">
+                    <div class="input-group mb-3">
+                      <input class="form-control" type="text" placeholder="Nome" name="iNome" id="iNome" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <input class="form-control" type="email" placeholder="E-mail" name="iEmail" id="iEmail" />
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <label for="iRaAtuacao" style="color:#000;">Modalidade de trabalho:</label>
+                      <select id="iRaAtuacao" class="select">
+                        <option value="1">Híbrido</option>
+                        <option value="2">Home-Office</option>
+                        <option value="3">Presencial</option>
+                      </select>
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <label for="iNivel" style="color:#000;">Nível:</label>
+                      <select id="iNivel" class="select">
+                        <option value="1">Nível Jr</option>
+                        <option value="2">Nível Trainee</option>
+                        <option value="3">Nível Pleno</option>
+                        <option value="4">Nível Senior</option>
+                      </select>
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <label for="iArea" style="color:#000;">Área de atuação:</label>
+                      <select id="iArea" class="select">
+                        <option value="1">Desenvolvimento Nativo</option>
+                        <option value="2">Desenvolvimento com React</option>
+                        <option value="3">Desenvolvimento com Flutter</option>
+                        <option value="4">Desenvolvimento FRONT-END (UX)</option>
+                      </select>
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <label for="iSalario" style="color:#000;">Faixa Salarial:</label>
+                      <select id="iSalario" class="select">
+                        <option value="1">Até R$ 1.000</option>
+                        <option value="2">R$ 1.000 - R$ 2.000</option>
+                        <option value="3">R$ 2.000 - R$ 3.000</option>
+                        <option value="4">R$ 3.000 - R$ 4.000</option>
+                        <option value="5">R$ 4.000 - R$ 5.000</option>
+                        <option value="6">Acima de R$ 5.000</option>
+                      </select>
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <input type="checkbox" class="LGPDCheck" id="iCheck" name="iCheck">
+                      <label class="LGPDlabel" for="LGPD" style="color:#000;">Eu concordo em receber outras comunicações sobre desenvolvimento mobile.</label>
+                    </div>
+      
+                    <div class="input-group mb-3">
+                      <p style="color:#000;">Ao clicar em "enviar" abaixo, você concorda em permitir que o Desenvolvimento Mobile armazene e processe as informações pessoais enviadas acima para fornecer o conteúdo solicitado.</p>
+                      <div class="button-wrapper">
+                        <input class="btn btn--primary btn--rounded" type="button" value="Enviar" name="submit" />
+                      </div>
+                    </div>
+                  </form>
+                  <div class="subscribe-alert"></div>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 wow fadeInUp" data-wow-duration="1s">
+                <div class="hero-holder"><img class="img-fluid" src="assets/images/mockup/ebook.png" alt="screens" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+     
+      <div class="clearfix bg-white"></div>
+    
+      <section class="feature feature-2 text-center bg-white" id="artigos">
+        <div class="container">
+          <div class="row clearfix">
+            
+          </div>
+         
+          <div class="row">
+        
+            <div class="col-12 col-md-4 col-lg-4 ">
+              <div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+                <div class="feature--icon"><img alt="" src="imgs/flutter.jpg"></div>
+                <div class="feature--content">
+                  <h3><a class="artigos" href="https://www.devmedia.com.br/guia/flutter/40713">Flutter</a></h3>
+                  <p>O Flutter é um framework construído pela Google para facilitar o desenvolvimento mobile multiplataforma e tem o Dart como principal linguagem de desenvolvimento.</p>
+                  <p><a class="artigos" href="https://www.devmedia.com.br/guia/flutter/40713">Leia Mais ></a></p>
+                </div>
+              </div>
+             
+            </div>
+            
+            <div class="col-12 col-md-4 col-lg-4 ">
+              <div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+                <div class="feature--icon"><img alt="" src="imgs/react.png"></div>
+                <div class="feature--content">
+                  <h3><a class="artigos" href="https://www.devmedia.com.br/primeiro-app-com-react-native/40737">React Native</a></h3>
+                  <p>O React Native é um framework para desenvolvimento de aplicações mobile. Ele utiliza o React para criar aplicativos, utiliza componentes nativos em lugar de web. </p>
+                  <p><a class="artigos" href="https://www.devmedia.com.br/primeiro-app-com-react-native/40737">Leia Mais ></a></p>
+                </div>
+              </div>
+             
+            </div>
+           
+            <div class="col-12 col-md-4 col-lg-4 ">
+              <div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+                <div class="feature--icon"><img alt="" src="imgs/java.jpg"></div>
+                <div class="feature--content">
+                  <h3><a class="artigos" href="https://www.venturus.org.br/mobile-o-futuro-do-desenvolvimento-nativo/">Nativo</a></h3>
+                  <p>Este artigo é a terceira parte da série: O paradigma declarativo e por que ele vai dominar o ambiente de desenvolvimento Mobile, falamos sobre o paradigma declarativo. </p>
+                  <p><a class="artigos" href="https://www.venturus.org.br/mobile-o-futuro-do-desenvolvimento-nativo/">Leia Mais ></a></p>
+                </div>
+              </div>
+              
+            </div>
+           
+          </div>
+        
+        </div>
+      </section>
+      <section class="pt-0 pb-0 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <hr class="feature-divider"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feature feature-2 feature-left bg-white" id="resumo">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExample" data-slide-to="1"></li>
+                  <li data-target="#carouselExample" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/MOBILE.png" alt="Imagem 1" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/REACTCARROUSEL.png" alt="Imagem 2" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/FLUTTER.png" alt="Imagem 3" class="d-block w-100">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="heading heading-1 mb-60 wow fadeInUp" data-wow-duration="1s">
+                <h2 class="heading--title pt-20">Dicas</h2>
+                <p class="heading--desc pl-0">Dicas e sugestões para trabalhar com desenvolvimento mobile.</p>
+              </div>
+              <div class="feature-panel mb-50 wow fadeInUp" data-wow-duration="1s">
+                <div class="feature--icon"><i class="lnr lnr-book"></i></div>
+                <div class="feature--content">
+                  <h3>Dicas para trabalhar com desenvolvimento mobile:</h3>
+                  <p>1. Mantenha-se atualizado com as últimas tendências e tecnologias.</p>
+                  <p>2. Aprenda diferentes plataformas: Domine pelo menos uma plataforma.</p>
+                  <p>3. Experiência do usuário: Projete uma interface intuitiva e amigável.</p>
+                  
+                </div>
+              </div>
+              <div class="feature-panel wow fadeInUp" data-wow-duration="1s">
+                <div class="feature--icon"><i class="lnr lnr-star"></i></div>
+                <div class="feature--content">
+                  <h3>Sugestões para trabalhar com desenvolvimento mobile:</h3>
+                  <p>1. Crie um portfólio de projetos para mostrar suas habilidades.</p>
+                  <p>2. Colabore em projetos de código aberto: Contribua para projetos existentes e ganhe experiência prática.</p>
+                  <p>3. Faça cursos e tutoriais: Aperfeiçoe suas habilidades por meio de aprendizado contínuo.</p>
+                  
+
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="pt-0 pb-0 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <hr class="feature-divider"/>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+
+
+      <section class="banner pt-0 pb-0" id="sobre">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-6 pr-0">
+              <div class="col-img d-flex justify-content-center align-items-center">
+                <div class="image-container">
+
+                  <div class="image-container-group">
+                  <img src="imgs/logoreact.png" alt="Imagem 1" class="circle-image">
+                  <img src="imgs/free-flutter-3629369-3032362.png" alt="Imagem 2" class="circle-image">
+                  <img src="imgs/java.jpg" alt="Imagem 3" class="circle-image">
+                  <img src="imgs/swiftlogo.png" alt="Imagem 1" class="circle-image">
+                  </div>
+                  <div class="image-container-group">
+                    <img src="imgs/javaa.png" alt="Imagem 1" class="circle-image">
+                    <img src="imgs/kotlin.png" alt="Imagem 2" class="circle-image">
+                    <img src="imgs/objective-c.png" alt="Imagem 3" class="circle-image">
+                    <img src="imgs/communityIcon_gjdxwtiuqt691.jpeg" alt="Imagem 1" class="circle-image">
+                  </div>
+                  <div class="image-container-group">
+                    <img src="imgs/androidStudio.png" alt="Imagem 1" class="circle-image">
+                  <img src="imgs/ac.jpg" alt="Imagem 2" class="circle-image">
+                  <img src="imgs/apple-touch-icon.png" alt="Imagem 3" class="circle-image">
+                  <img src="imgs/intellij.png" alt="Imagem 1" class="circle-image">
+                  </div>
+                
+
+                                </div>
+              </div>
+            </div>
+         
+          
+          <div class="col-12 col-md-12 col-lg-6 col-content pl-100">
+             <h3>Sobre o trabalho de um desenvolvedor mobile</h3>
+               <p>O trabalho de um desenvolvedor mobile envolve a criação e o aprimoramento de aplicativos para dispositivos móveis, como smartphones e tablets. Esses profissionais são responsáveis por transformar ideias e conceitos em soluções funcionais, utilizando linguagens de programação específicas e frameworks de desenvolvimento.</p>
+               <p>Eles trabalham em estreita colaboração com equipes de design e UX/UI para criar interfaces intuitivas e agradáveis ao usuário. Além disso, os desenvolvedores mobile lidam com desafios técnicos, como otimização de desempenho, compatibilidade com diferentes dispositivos e sistemas operacionais, segurança e integração de serviços externos.</p>
+               <p>Essa profissão exige um conhecimento sólido de linguagens de programação, como Java, Kotlin, Swift ou Objective-C, dependendo da plataforma de desenvolvimento escolhida. Além disso, os desenvolvedores mobile precisam se manter atualizados com as últimas tendências e tecnologias, já que o campo está em constante evolução.</p>
+         </div>
+        </div>
+       
+        </div>
+      
+      </section>
+      <section class="pt-0 pb-0 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <hr class="feature-divider"/>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18"> Desenvolvimento mobile</h3>                          
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18"></h3>
+                            <ul class="list-unstyled f_list">
+                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Links</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Política de privacidade</a></li>
+                                <li><a href="#">Termos de Uso</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Redes Sociais</h3>
+                            <div class="f_social_icon">
+                                <a href="#" class="fab fa-facebook"></a>
+                                <a href="#" class="fab fa-instagram"></a>
+                                <a href="#" class="fab fa-linkedin"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© Desenvolvimento mobile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
